@@ -1,9 +1,9 @@
 import 'package:simple_beautiful_checklist_exercise/data/database_repository.dart';
 
-class MockDatabaseRepository implements DatabaseRepository {
+class SharedPreferencesRepository implements DatabaseRepository {
   // Simulierte Datenbank mit einer Liste von Strings.
   // In einer echten App würden hier Daten aus einer Datenbank oder SharedPreferences geladen werden.
-  final List<String> _items = [];
+  final List<String> _items = ["laufen gehen"];
 
   @override
   Future<int> getItemCount() async {
